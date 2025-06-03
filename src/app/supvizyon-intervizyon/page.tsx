@@ -2,16 +2,10 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { FadeIn, ScaleIn, BackgroundGradient } from "@/components/animations";
+import { FadeIn, BackgroundGradient } from "@/components/animations";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import {
   Accordion,
   AccordionContent,
@@ -252,18 +246,16 @@ export default function SupervizyonIntervizyon() {
             <CardContent className="text-pretty">
               <div className="flex flex-col md:flex-row gap-8">
                 <div className="md:w-1/3 flex justify-center">
-                  <ScaleIn>
-                    <div className="relative h-72 w-56 rounded-md overflow-hidden shadow-xl">
-                      <Image
-                        src="/images/book-cover.jpg"
-                        alt="Süpervizyon ve İntervizyon Kitabı"
-                        fill
-                        style={{ objectFit: "cover" }}
-                        className="rounded-md"
-                        priority
-                      />
-                    </div>
-                  </ScaleIn>
+                  <div className="relative h-72 w-56 rounded-md overflow-hidden shadow-xl">
+                    <Image
+                      src="/images/book-cover.jpg"
+                      alt="Süpervizyon ve İntervizyon Kitabı"
+                      fill
+                      style={{ objectFit: "cover" }}
+                      className="rounded-md"
+                      priority
+                    />
+                  </div>
                 </div>
                 <div className="md:w-2/3">
                   <blockquote className="border-l-4 border-primary/50 pl-4 italic mb-6">
@@ -341,26 +333,27 @@ export default function SupervizyonIntervizyon() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {bolumler.map((bolum, index) => (
-              <ScaleIn key={bolum.id} delay={100 * index}>
-                <Card className="h-full border border-primary/10 shadow-md hover:shadow-lg transition-shadow">
-                  <CardHeader className="bg-primary/5 border-b border-primary/10">
-                    <CardTitle className="flex items-center gap-2">
-                      {bolum.icon}
-                      {bolum.title}
-                    </CardTitle>
-                  </CardHeader>
-                  <CardContent className="pt-6">
-                    <ul className="space-y-2">
-                      {bolum.items.map((item, i) => (
-                        <li key={i} className="flex items-start gap-2">
-                          <ArrowRight className="h-4 w-4 text-primary mt-1 shrink-0" />
-                          <span className="text-muted-foreground">{item}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </CardContent>
-                </Card>
-              </ScaleIn>
+              <Card
+                key={bolum.id}
+                className="h-full border border-primary/10 shadow-md hover:shadow-lg transition-shadow"
+              >
+                <CardHeader className="bg-primary/5 border-b border-primary/10">
+                  <CardTitle className="flex items-center gap-2">
+                    {bolum.icon}
+                    {bolum.title}
+                  </CardTitle>
+                </CardHeader>
+                <CardContent className="pt-6">
+                  <ul className="space-y-2">
+                    {bolum.items.map((item, i) => (
+                      <li key={i} className="flex items-start gap-2">
+                        <ArrowRight className="h-4 w-4 text-primary mt-1 shrink-0" />
+                        <span className="text-muted-foreground">{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </CardContent>
+              </Card>
             ))}
           </div>
         </div>
@@ -375,16 +368,17 @@ export default function SupervizyonIntervizyon() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {sertifikalar.map((sertifika, index) => (
-              <ScaleIn key={sertifika.id} delay={50 * index}>
-                <Card className="border border-primary/10 shadow-sm hover:shadow-md transition-shadow">
-                  <CardContent className="p-6">
-                    <div className="flex items-start gap-3">
-                      {sertifika.icon}
-                      <p className="font-medium">{sertifika.title}</p>
-                    </div>
-                  </CardContent>
-                </Card>
-              </ScaleIn>
+              <Card
+                key={sertifika.id}
+                className="border border-primary/10 shadow-sm hover:shadow-md transition-shadow"
+              >
+                <CardContent className="p-6">
+                  <div className="flex items-start gap-3">
+                    {sertifika.icon}
+                    <p className="font-medium">{sertifika.title}</p>
+                  </div>
+                </CardContent>
+              </Card>
             ))}
           </div>
         </div>
@@ -428,17 +422,15 @@ export default function SupervizyonIntervizyon() {
                   </div>
                 </div>
                 <div className="md:w-1/2 flex justify-center">
-                  <ScaleIn>
-                    <Button size="lg" className="group">
-                      <Link
-                        href="/pak-ozel-egitim"
-                        className="flex items-center gap-2"
-                      >
-                        Eğitim Programları Hakkında Detaylı Bilgi
-                        <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
-                      </Link>
-                    </Button>
-                  </ScaleIn>
+                  <Button size="lg" className="group">
+                    <Link
+                      href="/pak-ozel-egitim"
+                      className="flex items-center gap-2"
+                    >
+                      Eğitim Programları Hakkında Detaylı Bilgi
+                      <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+                    </Link>
+                  </Button>
                 </div>
               </div>
             </CardContent>

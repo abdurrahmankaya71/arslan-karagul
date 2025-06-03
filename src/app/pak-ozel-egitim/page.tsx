@@ -1,14 +1,8 @@
 "use client";
 
-import { FadeIn, ScaleIn, BackgroundGradient } from "@/components/animations";
+import { FadeIn, BackgroundGradient } from "@/components/animations";
 import { Button } from "@/components/ui/button";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import {
   Accordion,
   AccordionContent,
@@ -413,7 +407,7 @@ export default function PAKOzelEgitim() {
             </p>
 
             <div className="max-w-4xl mx-auto">
-              <ScaleIn delay={200}>
+              <FadeIn delay={200}>
                 <div className="rounded-xl overflow-hidden shadow-2xl relative ring-1 ring-black/10 dark:ring-white/10">
                   <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 via-transparent to-blue-500/20 pointer-events-none z-10 opacity-30" />
                   <YouTubePlayer
@@ -421,7 +415,7 @@ export default function PAKOzelEgitim() {
                     title="Dr. Arslan Karagül - PAK Özel Eğitim Merkezi Tanıtımı"
                   />
                 </div>
-              </ScaleIn>
+              </FadeIn>
             </div>
           </div>
         </FadeIn>
@@ -451,7 +445,7 @@ export default function PAKOzelEgitim() {
 
             {sertifikalar.map((sertifika) => (
               <TabsContent key={sertifika.id} value={sertifika.id}>
-                <ScaleIn>
+                <FadeIn>
                   <Card>
                     <CardHeader>
                       <CardTitle className="text-xl md:text-2xl flex items-center gap-2">
@@ -461,7 +455,7 @@ export default function PAKOzelEgitim() {
                     </CardHeader>
                     <CardContent>{sertifika.content}</CardContent>
                   </Card>
-                </ScaleIn>
+                </FadeIn>
               </TabsContent>
             ))}
           </Tabs>

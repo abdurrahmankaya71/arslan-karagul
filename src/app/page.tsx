@@ -13,7 +13,7 @@ import {
   School,
   ArrowDown,
 } from "lucide-react";
-import { FadeIn, BackgroundGradient, ScaleIn } from "@/components/animations";
+import { FadeIn, BackgroundGradient } from "@/components/animations";
 
 export default function Home() {
   return (
@@ -96,15 +96,13 @@ export default function Home() {
             </p>
 
             <div className="max-w-4xl mx-auto">
-              <ScaleIn delay={200}>
-                <div className="rounded-xl overflow-hidden shadow-2xl relative ring-1 ring-black/10 dark:ring-white/10">
-                  <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 via-transparent to-blue-500/20 pointer-events-none z-10 opacity-30" />
-                  <YouTubePlayer
-                    videoId="I80a6V0nyNw"
-                    title="Dr. Arslan Karagül - PAK Özel Eğitim Merkezi Tanıtımı"
-                  />
-                </div>
-              </ScaleIn>
+              <div className="rounded-xl overflow-hidden shadow-2xl relative ring-1 ring-black/10 dark:ring-white/10">
+                <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 via-transparent to-blue-500/20 pointer-events-none z-10 opacity-30" />
+                <YouTubePlayer
+                  videoId="I80a6V0nyNw"
+                  title="Dr. Arslan Karagül - PAK Özel Eğitim Merkezi Tanıtımı"
+                />
+              </div>
             </div>
           </div>
         </FadeIn>

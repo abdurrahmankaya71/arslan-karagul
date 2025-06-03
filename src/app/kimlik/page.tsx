@@ -2,17 +2,11 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { FadeIn, ScaleIn, BackgroundGradient } from "@/components/animations";
+import { FadeIn, BackgroundGradient } from "@/components/animations";
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Badge } from "@/components/ui/badge";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import {
   Accordion,
   AccordionContent,
