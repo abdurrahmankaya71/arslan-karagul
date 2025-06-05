@@ -173,37 +173,36 @@ export default function Kimlik() {
                   </CardHeader>
                   <CardContent className="space-y-4 text-pretty">
                     <p>
-                      1952\'de Ordu\'nun Ünye kazasının Tekkiraz nahiyesinin
+                      1952'de Ordu'nun Ünye kazasının Tekkiraz nahiyesinin
                       Uğurlu köyünde doğdu. İlkokulu köyünde, orta-liseyi Samsun
-                      İmam Hatip\'te okudu. 1980\'de Samsun Yüksek İslam
-                      Enstitüsü\'nü bitirerek aynı yıl Amasya-Taşova\'ya müftü
+                      İmam Hatip'te okudu. 1980'de Samsun Yüksek İslam
+                      Enstitüsü'nü bitirerek aynı yıl Amasya-Taşova'ya müftü
                       olarak atandı. Bu görevde iken katıldığı Diyanet İşleri
                       Başkanlığı İstanbul Hizmetiçi Müftü ve Vaizler Kursunu
-                      1983\'te bitirdikten sonra aynı yıl Hollanda\'ya din
+                      1983'te bitirdikten sonra aynı yıl Hollanda'ya din
                       görevlisi olarak gönderildi.
                     </p>
                     <p>
-                      1983-84 yıllarında Hollanda\'nın Breda ve Tilburg
+                      1983-84 yıllarında Hollanda'nın Breda ve Tilburg
                       şehirlerinde bir yıl Diyanet Din Görevliliği yaptıktan
-                      sonra, 1985-\'87 yıllarında Amsterdam Üniversitesinde
-                      (UvA) Hristiyanlık üzerine Yüksek Lisans (master)
-                      eğitimini tamamladı. 1988-\'94 arası aynı Üniversitede
-                      (Universiteit van Amsterdam), Avrupa ve İslam ülkeleriyle
-                      mukayeseli olarak, Hollanda\'da İlkokullar\'da İslam din
-                      eğitimi konusunda doktorasını yaptı. 1995-2005 arası (yarı
-                      zamanlı olarak) Amsterdam İntercoffessionele PABO (Dinler
-                      arası Öğretmen Eğitim AkÂdemisinde) İslam Din Dersi
-                      eğitimi verdi. Aynı yıllarda Amsterdam (VUMC) ve Utrecht
-                      (UMC) AkÂdemi Hastanelerinde (yarı-zamanlı olarak) İslami
-                      Manevi Bakım konusunda araştırma ve uygulama görevinde
-                      bulundu.
+                      sonra, 1985-'87 yıllarında Amsterdam Üniversitesinde (UvA)
+                      Hristiyanlık üzerine Yüksek Lisans (master) eğitimini
+                      tamamladı. 1988-'94 arası aynı Üniversitede (Universiteit
+                      van Amsterdam), Avrupa ve İslam ülkeleriyle mukayeseli
+                      olarak, Hollanda'da İlkokullar'da İslam din eğitimi
+                      konusunda doktorasını yaptı. 1995-2005 arası (yarı zamanlı
+                      olarak) Amsterdam İntercoffessionele PABO (Dinler arası
+                      Öğretmen Eğitim AkÂdemisinde) İslam Din Dersi eğitimi
+                      verdi. Aynı yıllarda Amsterdam (VUMC) ve Utrecht (UMC)
+                      AkÂdemi Hastanelerinde (yarı-zamanlı olarak) İslami Manevi
+                      Bakım konusunda araştırma ve uygulama görevinde bulundu.
                     </p>
                     <p>
-                      2000 yılında Hollanda\'nın Amersfort şehrinde Klinik
-                      Eğitim Merkezinde 3 aylık (yatılı) Klinik Manevi Formasyon
-                      Kursu\'na katıldı (KPV). 2003-2005 yıllarında
-                      Amsterdam\'da Post-AkÂdemik Süpervizörlük (www.pao.nl)
-                      eğitimini bitirerek resmi kurumlarda çalışan manevi bakım
+                      2000 yılında Hollanda'nın Amersfort şehrinde Klinik Eğitim
+                      Merkezinde 3 aylık (yatılı) Klinik Manevi Formasyon
+                      Kursu'na katıldı (KPV). 2003-2005 yıllarında Amsterdam'da
+                      Post-AkÂdemik Süpervizörlük (www.pao.nl) eğitimini
+                      bitirerek resmi kurumlarda çalışan manevi bakım
                       görevlilerine süpervizörlük yaptı.
                     </p>
                     <p>
@@ -213,11 +212,10 @@ export default function Kimlik() {
                       Merkezinde (Centrum voor İslamitische Theologie), İslami
                       Manevi Bakım bölümü Yüksek Lisans (master) koordinatörü ve
                       süpervizör olarak Öğretim Üyeliği yaptı. Bu kurumdan 2016
-                      yılında emekliye ayrılarak Türkiye\'ye kesin dönüş yapmış
+                      yılında emekliye ayrılarak Türkiye'ye kesin dönüş yapmış
                       bulunan Karagül, 2017 yılından itibaren memleketi olan
-                      ORDU/Ünye\'de ikamet etmektedir. Karagül orta derece
-                      Arapça ve Hollandaca (Flemenkçe), biraz da İngilizce
-                      bilmektedir.
+                      ORDU/Ünye'de ikamet etmektedir. Karagül orta derece Arapça
+                      ve Hollandaca (Flemenkçe), biraz da İngilizce bilmektedir.
                     </p>
                   </CardContent>
                 </Card>
@@ -254,7 +252,7 @@ export default function Kimlik() {
                         kurucu üyesi (başkan) 2001
                       </li>
                       <li>
-                        Hollanda\'da Manevi Bakım Meslek içi Supervisörlük
+                        Hollanda'da Manevi Bakım Meslek içi Supervisörlük
                         eğitimi alan ilk ilahiyatçı, 2003-2005
                       </li>
                     </ul>
@@ -469,7 +467,7 @@ export default function Kimlik() {
                               (yayına hazırlanıyor), 2022.
                             </li>
                             <li>
-                              Karağül, A. Batı\'da resmi kurumlarda profesyonel
+                              Karağül, A. Batı'da resmi kurumlarda profesyonel
                               MANEVİ BAKIM HİZMETLERİ TEORİ VE PRATİĞİ, 2020
                             </li>
                             <li>
@@ -489,36 +487,36 @@ export default function Kimlik() {
                         <AccordionContent>
                           <ul className="list-disc pl-5 space-y-2 text-muted-foreground">
                             <li>
-                              Karagül, A. \'Manevi danışmanlık ve rehberlik
-                              eğitiminde staj ve süpervizyonun önemi\', içinde:
+                              Karagül, A. 'Manevi danışmanlık ve rehberlik
+                              eğitiminde staj ve süpervizyonun önemi', içinde:
                               Sağlık Hizmeterinde Manevi Danışmanlık ve
                               Rehberlik (Dijital yayın). DEM Ensar Neşriyat
                               ss.89-108, 2019.
                             </li>
                             <li>
-                              A.Karagul, A. \'Islamitische Seelsorge in den
-                              Niederlanden. Vom Laientum zur Professionalität\'
-                              (Hollanda\'da Islami Manevi Bakım. Armatörlük\'ten
+                              A.Karagul, A. 'Islamitische Seelsorge in den
+                              Niederlanden. Vom Laientum zur Professionalität'
+                              (Hollanda'da Islami Manevi Bakım. Armatörlük'ten
                               Profesyonelliğe). Híkma (ilmi dergi), Journal of
                               Islamic Theology and Religious Education, 2015.
                             </li>
                             <li>
-                              Karagül, A. \"Göç\'ün 50. Yılında Hollanda\'da Din
-                              ve İlahiyat eğitimi\' (Religious Studies and
-                              Theology in the 50th Year of Migration in the
-                              Netherlands), Uluslararası-International
-                              Türkiye-Hollanda İlişkiler Sempozyumu, 2014.
+                              Karagül, A. "Göç'ün 50. Yılında Hollanda'da Din ve
+                              İlahiyat eğitimi' (Religious Studies and Theology
+                              in the 50th Year of Migration in the Netherlands),
+                              Uluslararası-International Türkiye-Hollanda
+                              İlişkiler Sempozyumu, 2014.
                             </li>
                             <li>
-                              Karagül, A., \"Avrupa\'da Müslüman Gençlerin
-                              Maneviyatla İlişkisi,\" Gençlik ve Kültürel
+                              Karagül, A., "Avrupa'da Müslüman Gençlerin
+                              Maneviyatla İlişkisi," Gençlik ve Kültürel
                               Mirasımız (Youth and Our Cultural Heritage)
                               Uluslararası Kongre, 2014.
                             </li>
                             <li>
-                              Karagül, A. \'Manevi Bakım: Anlamı, önemi, yöntemi
-                              ve eğitimi (Hollanda örneği)\': Spiritual Care:
-                              It\'s meaning, Significance, Method, and Training
+                              Karagül, A. 'Manevi Bakım: Anlamı, önemi, yöntemi
+                              ve eğitimi (Hollanda örneği)': Spiritual Care:
+                              It's meaning, Significance, Method, and Training
                               (The Netherlands Case). Dini Araştırmalar, 2012.
                             </li>
                           </ul>
@@ -533,7 +531,7 @@ export default function Kimlik() {
                               Stella van de Wetering/Arslan Karagül, Zoek kennis
                               van de wieg tot het graf. Islamitisch
                               godsdienstonderwijs in Nederland (Beşikten Mezara.
-                              Hollanda\'da islam din egitimi),
+                              Hollanda'da islam din egitimi),
                               Antwerpen-Apeldoorn; Garant, 2013.
                             </li>
                           </ul>
@@ -585,14 +583,14 @@ export default function Kimlik() {
                         <AccordionContent>
                           <ul className="list-disc pl-5 space-y-2 text-muted-foreground">
                             <li>
-                              \'Modernleşme arttıkça insanın manevi danışmanlığa
-                              olan ihtiyacı da artmıştır\'. Söyleşi: Mustafa
+                              'Modernleşme arttıkça insanın manevi danışmanlığa
+                              olan ihtiyacı da artmıştır'. Söyleşi: Mustafa
                               Berg. Diyanet aylık dergi, Şubat 2019, sayı: 338,
                               ss.22-25.
                             </li>
                             <li>
-                              \'Manevi Bakım bir vaaz ve nasihat meselesi
-                              değildir\', Amsterdam: Platform dergisi, röportaj:
+                              'Manevi Bakım bir vaaz ve nasihat meselesi
+                              değildir', Amsterdam: Platform dergisi, röportaj:
                               Banu Çelik, 2012.
                             </li>
                           </ul>

@@ -13,6 +13,8 @@ import {
   Video,
   MoreHorizontal,
   ChevronDown,
+  Mail,
+  FileText,
 } from "lucide-react";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import { cn } from "@/lib/utils";
@@ -53,6 +55,8 @@ const Navbar = () => {
     { name: "Kimlik", href: "/kimlik", icon: User },
     { name: "Kitaplar", href: "/kitaplar", icon: BookOpen },
     { name: "Mülakatlar", href: "/mulakatlar", icon: Video },
+    { name: "İletişim", href: "/iletisim", icon: Mail },
+    { name: "Makaleler", href: "/blog", icon: FileText },
   ];
 
   return (
@@ -101,38 +105,6 @@ const Navbar = () => {
                 </Link>
               );
             })}
-
-            <div className="relative group">
-              <Button
-                variant="ghost"
-                size="sm"
-                className="flex items-center gap-1.5 px-3 py-2 rounded-md text-sm font-medium hover:bg-primary/5"
-              >
-                <MoreHorizontal className="h-4 w-4" />
-                <span>Diğer</span>
-                <ChevronDown className="h-3 w-3 opacity-70 transition-transform group-hover:rotate-180" />
-              </Button>
-              <div className="absolute top-full right-0 w-48 py-2 bg-background border border-border/40 rounded-md shadow-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
-                <Link
-                  href="/blog"
-                  className="flex items-center gap-2 px-4 py-2 text-sm text-foreground/80 hover:text-primary hover:bg-primary/5"
-                >
-                  Blog
-                </Link>
-                <Link
-                  href="/galeri"
-                  className="flex items-center gap-2 px-4 py-2 text-sm text-foreground/80 hover:text-primary hover:bg-primary/5"
-                >
-                  Galeri
-                </Link>
-                <Link
-                  href="/iletisim"
-                  className="flex items-center gap-2 px-4 py-2 text-sm text-foreground/80 hover:text-primary hover:bg-primary/5"
-                >
-                  İletişim
-                </Link>
-              </div>
-            </div>
 
             <div className="pl-2 border-l border-border/40 ml-2">
               <ThemeToggle />
@@ -184,25 +156,11 @@ const Navbar = () => {
             })}
             <div className="pt-2 mt-2 border-t border-border/40">
               <Link
-                href="/blog"
-                className="flex items-center gap-3 px-3 py-2.5 rounded-md text-base font-medium text-foreground/80 hover:text-primary hover:bg-primary/5"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Blog
-              </Link>
-              <Link
                 href="/galeri"
                 className="flex items-center gap-3 px-3 py-2.5 rounded-md text-base font-medium text-foreground/80 hover:text-primary hover:bg-primary/5"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Galeri
-              </Link>
-              <Link
-                href="/iletisim"
-                className="flex items-center gap-3 px-3 py-2.5 rounded-md text-base font-medium text-foreground/80 hover:text-primary hover:bg-primary/5"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                İletişim
               </Link>
             </div>
           </div>
