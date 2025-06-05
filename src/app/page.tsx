@@ -35,15 +35,19 @@ export default function Home() {
           </p>
           <div className="flex flex-wrap gap-4 pt-2">
             <Button asChild size="lg" className="group">
-              <Link href="/kimlik">
+              <Link href="/kimlik" className="flex items-center">
                 Hakkımda Daha Fazla{" "}
-                <ArrowRight className="ml-2 size-4 transition-transform group-hover:translate-x-1" />
+                <span className="arrow-container ml-2">
+                  <ArrowRight className="size-5 arrow-icon drop-shadow-glow group-hover:translate-x-1 text-white" />
+                </span>
               </Link>
             </Button>
             <Button variant="outline" asChild size="lg" className="group">
-              <Link href="/kitaplar">
+              <Link href="/kitaplar" className="flex items-center">
                 Kitaplarım{" "}
-                <ArrowRight className="ml-2 size-4 opacity-0 transition-all group-hover:opacity-100 group-hover:translate-x-1" />
+                <span className="arrow-container ml-2">
+                  <ArrowRight className="size-5 arrow-icon group-hover:translate-x-1" />
+                </span>
               </Link>
             </Button>
           </div>
@@ -73,9 +77,11 @@ export default function Home() {
           <Button
             variant="ghost"
             size="icon"
-            className="rounded-full animate-bounce"
+            className="rounded-full animate-bounce p-3 bg-primary/15 hover:bg-primary/30 transition-colors duration-300 group"
           >
-            <ArrowDown className="h-6 w-6" />
+            <span className="arrow-container">
+              <ArrowDown className="h-10 w-10 text-primary drop-shadow-glow" />
+            </span>
             <span className="sr-only">Aşağı kaydır</span>
           </Button>
         </FadeIn>
@@ -83,21 +89,23 @@ export default function Home() {
 
       {/* Video Bölümü */}
       <section className="py-20 relative">
-        <div className="absolute inset-0 bg-gradient-to-r from-primary/5 to-transparent opacity-50 rounded-3xl" />
+        <div className="absolute inset-0 bg-gradient-to-r from-primary/10 to-transparent opacity-60 rounded-3xl" />
 
         <FadeIn>
           <div className="relative z-10">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
-              <span className="text-gradient">Tanıtım Videosu</span>
+            <h2 className="text-3xl md:text-5xl font-bold mb-6 text-center">
+              <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary to-blue-500">
+                Tanıtım Videosu
+              </span>
             </h2>
-            <p className="text-lg text-muted-foreground text-center max-w-2xl mx-auto mb-10">
-              PAK Özel Eğitim Merkezi ve sunduğumuz hizmetler hakkında daha
-              fazla bilgi edinmek için tanıtım videomuzu izleyebilirsiniz.
+            <p className="text-lg text-muted-foreground text-center max-w-2xl mx-auto mb-12">
+              Dr. Arslan Karagül hakkında fazla bilgi edinmek için tanıtım
+              videomuzu izleyebilirsiniz.
             </p>
 
             <div className="max-w-4xl mx-auto">
-              <div className="rounded-xl overflow-hidden shadow-2xl relative ring-1 ring-black/10 dark:ring-white/10">
-                <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 via-transparent to-blue-500/20 pointer-events-none z-10 opacity-30" />
+              <div className="rounded-2xl overflow-hidden shadow-2xl relative ring-1 ring-black/10 dark:ring-white/10 transform transition-all duration-300 hover:scale-[1.01] hover:shadow-primary/20">
+                <div className="absolute inset-0 bg-gradient-to-tr from-primary/30 via-transparent to-blue-500/30 pointer-events-none z-10 opacity-40" />
                 <YouTubePlayer
                   videoId="I80a6V0nyNw"
                   title="Dr. Arslan Karagül - PAK Özel Eğitim Merkezi Tanıtımı"
@@ -149,7 +157,9 @@ export default function Home() {
                           className="flex items-center justify-center"
                         >
                           Daha Fazla Bilgi
-                          <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                          <span className="arrow-container ml-2">
+                            <ArrowRight className="h-5 w-5 arrow-icon group-hover:translate-x-1 group-hover:scale-110" />
+                          </span>
                         </Link>
                       </Button>
                     </CardContent>
@@ -187,7 +197,9 @@ export default function Home() {
                           className="flex items-center justify-center"
                         >
                           Daha Fazla Bilgi
-                          <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                          <span className="arrow-container ml-2">
+                            <ArrowRight className="h-5 w-5 arrow-icon group-hover:translate-x-1 group-hover:scale-110" />
+                          </span>
                         </Link>
                       </Button>
                     </CardContent>
@@ -224,7 +236,9 @@ export default function Home() {
                           className="flex items-center justify-center"
                         >
                           Kitaplarımı Keşfedin
-                          <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                          <span className="arrow-container ml-2">
+                            <ArrowRight className="h-5 w-5 arrow-icon group-hover:translate-x-1 group-hover:scale-110" />
+                          </span>
                         </Link>
                       </Button>
                     </CardContent>
@@ -261,7 +275,9 @@ export default function Home() {
                           className="flex items-center justify-center"
                         >
                           Tüm Mülakatlar
-                          <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                          <span className="arrow-container ml-2">
+                            <ArrowRight className="h-5 w-5 arrow-icon group-hover:translate-x-1 group-hover:scale-110" />
+                          </span>
                         </Link>
                       </Button>
                     </CardContent>

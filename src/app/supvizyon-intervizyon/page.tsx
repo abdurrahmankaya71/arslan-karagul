@@ -24,6 +24,7 @@ import {
   FileCheck,
   BarChart,
   RefreshCw,
+  User,
 } from "lucide-react";
 
 export default function SupervizyonIntervizyon() {
@@ -220,12 +221,11 @@ export default function SupervizyonIntervizyon() {
       {/* Başlık Bölümü */}
       <FadeIn direction="down">
         <div className="text-center mb-12">
-          <Badge
-            variant="outline"
-            className="mb-4 px-3 py-1 text-sm border-primary/30"
-          >
-            Dr. Arslan Karagül
-          </Badge>
+          <div className="inline-block mb-4 bg-gradient-to-r from-primary/20 to-blue-500/20 px-5 py-2 rounded-full">
+            <p className="text-sm font-medium text-primary">
+              Dr. Arslan Karagül
+            </p>
+          </div>
           <h1 className="text-4xl md:text-5xl font-bold mb-4 text-balance">
             Süpervizyon ve <span className="text-primary">İntervizyon</span>
           </h1>
@@ -241,7 +241,7 @@ export default function SupervizyonIntervizyon() {
         <BackgroundGradient className="bg-primary/5" containerClassName="mb-16">
           <Card className="border-0 shadow-none bg-transparent">
             <CardHeader>
-              <CardTitle className="text-2xl text-center">Önsöz</CardTitle>
+              <CardTitle className="text-2xl text-center mt-6">Önsöz</CardTitle>
             </CardHeader>
             <CardContent className="text-pretty">
               <div className="flex flex-col md:flex-row gap-8">
@@ -312,7 +312,7 @@ export default function SupervizyonIntervizyon() {
             >
               <Card className="overflow-hidden border border-primary/10 shadow-md">
                 <CardHeader className="bg-primary/5 border-b border-primary/10">
-                  <CardTitle className="flex items-center gap-3">
+                  <CardTitle className="flex items-center gap-3 mt-6">
                     {baslik.icon}
                     {baslik.title}
                   </CardTitle>
@@ -338,7 +338,7 @@ export default function SupervizyonIntervizyon() {
                 className="h-full border border-primary/10 shadow-md hover:shadow-lg transition-shadow"
               >
                 <CardHeader className="bg-primary/5 border-b border-primary/10">
-                  <CardTitle className="flex items-center gap-2">
+                  <CardTitle className="flex items-center gap-2 mt-6">
                     {bolum.icon}
                     {bolum.title}
                   </CardTitle>
@@ -366,16 +366,18 @@ export default function SupervizyonIntervizyon() {
             Sertifika <span className="text-primary">Programları</span>
           </h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            {sertifikalar.map((sertifika, index) => (
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4">
+            {sertifikalar.map((sertifika) => (
               <Card
                 key={sertifika.id}
                 className="border border-primary/10 shadow-sm hover:shadow-md transition-shadow"
               >
-                <CardContent className="p-6">
+                <CardContent className="p-4 sm:p-6">
                   <div className="flex items-start gap-3">
-                    {sertifika.icon}
-                    <p className="font-medium">{sertifika.title}</p>
+                    <div className="shrink-0 mt-0.5">{sertifika.icon}</div>
+                    <p className="font-medium text-sm sm:text-base">
+                      {sertifika.title}
+                    </p>
                   </div>
                 </CardContent>
               </Card>

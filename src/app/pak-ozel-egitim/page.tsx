@@ -10,7 +10,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Badge } from "@/components/ui/badge";
+// import { Badge } from "@/components/ui/badge";
 import {
   School,
   BookOpen,
@@ -276,12 +276,11 @@ export default function PAKOzelEgitim() {
       {/* Başlık Bölümü */}
       <FadeIn direction="down">
         <div className="text-center mb-12">
-          <Badge
-            variant="outline"
-            className="mb-4 px-3 py-1 text-sm border-primary/30"
-          >
-            Post-Akademik Eğitim Merkezi
-          </Badge>
+          <div className="inline-block mb-4 bg-gradient-to-r from-primary/20 to-blue-500/20 px-5 py-2 rounded-full">
+            <p className="text-sm font-medium text-primary">
+              Post-Akademik Eğitim Merkezi
+            </p>
+          </div>
           <h1 className="text-4xl md:text-5xl font-bold mb-4 text-balance">
             PAK <span className="text-primary">Özel Eğitim Merkezi</span>
           </h1>
@@ -296,7 +295,9 @@ export default function PAKOzelEgitim() {
         <BackgroundGradient className="bg-primary/5" containerClassName="mb-16">
           <Card className="border-0 shadow-none bg-transparent">
             <CardHeader>
-              <CardTitle className="text-2xl text-center">Tanıtım</CardTitle>
+              <CardTitle className="text-2xl text-center mt-6">
+                Tanıtım
+              </CardTitle>
             </CardHeader>
             <CardContent className="text-pretty">
               <p className="mb-4">
@@ -328,7 +329,7 @@ export default function PAKOzelEgitim() {
         <FadeIn direction="left" delay={300}>
           <Card className="h-full">
             <CardHeader>
-              <CardTitle className="flex items-center gap-2">
+              <CardTitle className="flex items-center gap-2 mt-6">
                 <FileText className="h-5 w-5 text-primary" />
                 Amaç ve Kapsam
               </CardTitle>
@@ -362,7 +363,7 @@ export default function PAKOzelEgitim() {
         <FadeIn direction="right" delay={400}>
           <Card className="h-full">
             <CardHeader>
-              <CardTitle className="flex items-center gap-2">
+              <CardTitle className="flex items-center gap-2 mt-6">
                 <CalendarClock className="h-5 w-5 text-primary" />
                 Eğitim Şekli
               </CardTitle>
@@ -429,31 +430,37 @@ export default function PAKOzelEgitim() {
           </h2>
 
           <Tabs defaultValue="genel-mesleki-sup" className="w-full">
-            <TabsList className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 mb-8">
-              {sertifikalar.map((sertifika) => (
-                <TabsTrigger
-                  key={sertifika.id}
-                  value={sertifika.id}
-                  className="text-xs md:text-sm flex items-center gap-1.5"
-                >
-                  {sertifika.icon}
-                  <span className="hidden md:inline">Sertifika</span>{" "}
-                  {sertifika.id.split("-").pop()}
-                </TabsTrigger>
-              ))}
-            </TabsList>
+            <div className="overflow-x-auto pb-2 -mx-4 px-4 mb-2">
+              <TabsList className="flex md:grid md:grid-cols-3 lg:grid-cols-6 min-w-max md:min-w-0 mb-4">
+                {sertifikalar.map((sertifika) => (
+                  <TabsTrigger
+                    key={sertifika.id}
+                    value={sertifika.id}
+                    className="text-xs sm:text-sm whitespace-nowrap flex items-center gap-1 px-2 py-1.5"
+                  >
+                    {sertifika.icon}
+                    <span className="hidden sm:inline">Sertifika</span>{" "}
+                    <span className="capitalize">
+                      {sertifika.id.split("-").pop()}
+                    </span>
+                  </TabsTrigger>
+                ))}
+              </TabsList>
+            </div>
 
             {sertifikalar.map((sertifika) => (
               <TabsContent key={sertifika.id} value={sertifika.id}>
                 <FadeIn>
                   <Card>
-                    <CardHeader>
-                      <CardTitle className="text-xl md:text-2xl flex items-center gap-2">
+                    <CardHeader className="px-4 sm:px-6">
+                      <CardTitle className="text-lg sm:text-xl md:text-2xl flex flex-wrap items-center gap-2 mt-6">
                         {sertifika.icon}
-                        {sertifika.title}
+                        <span className="leading-tight">{sertifika.title}</span>
                       </CardTitle>
                     </CardHeader>
-                    <CardContent>{sertifika.content}</CardContent>
+                    <CardContent className="px-4 sm:px-6">
+                      {sertifika.content}
+                    </CardContent>
                   </Card>
                 </FadeIn>
               </TabsContent>

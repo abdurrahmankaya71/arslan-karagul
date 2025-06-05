@@ -5,7 +5,6 @@ import Link from "next/link";
 import { FadeIn, BackgroundGradient } from "@/components/animations";
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import {
   Accordion,
@@ -23,6 +22,7 @@ import {
   Calendar,
   ExternalLink,
   Mail,
+  Briefcase,
 } from "lucide-react";
 
 export default function Kimlik() {
@@ -31,14 +31,11 @@ export default function Kimlik() {
       {/* Başlık Bölümü */}
       <FadeIn direction="down">
         <div className="text-center mb-12">
-          <Badge
-            variant="outline"
-            className="mb-4 px-3 py-1 text-sm border-primary/30"
-          >
-            Özgeçmiş
-          </Badge>
+          <div className="inline-block mb-4 bg-gradient-to-r from-primary/20 to-blue-500/20 px-5 py-2 rounded-full">
+            <p className="text-sm font-medium text-primary">Özgeçmiş</p>
+          </div>
           <h1 className="text-4xl md:text-5xl font-bold mb-4 text-balance">
-            Doç. Dr. <span className="text-primary">Arslan Karagül</span>
+            Dr. <span className="text-primary">Arslan Karagül</span>
           </h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto text-balance">
             İslami Manevi Bakım ve Din Eğitimi Uzmanı, Süpervizör
@@ -68,7 +65,7 @@ export default function Kimlik() {
 
             <Card>
               <CardHeader>
-                <CardTitle>Kişisel Bilgiler</CardTitle>
+                <CardTitle className="mt-6">Kişisel Bilgiler</CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
                 <div className="flex items-start gap-3">
@@ -169,43 +166,44 @@ export default function Kimlik() {
               <TabsContent value="ozgecmis" className="space-y-6">
                 <Card>
                   <CardHeader>
-                    <CardTitle className="text-xl flex items-center gap-2">
+                    <CardTitle className="text-xl flex items-center gap-2 mt-6">
                       <FileText className="h-5 w-5 text-primary" />
                       Kısa Özgeçmiş
                     </CardTitle>
                   </CardHeader>
                   <CardContent className="space-y-4 text-pretty">
                     <p>
-                      1952'de Ordu'nun Ünye kazasının Tekkiraz nahiyesinin
+                      1952\'de Ordu\'nun Ünye kazasının Tekkiraz nahiyesinin
                       Uğurlu köyünde doğdu. İlkokulu köyünde, orta-liseyi Samsun
-                      İmam Hatip'te okudu. 1980'de Samsun Yüksek İslam
-                      Enstitüsü'nü bitirerek aynı yıl Amasya-Taşova'ya müftü
+                      İmam Hatip\'te okudu. 1980\'de Samsun Yüksek İslam
+                      Enstitüsü\'nü bitirerek aynı yıl Amasya-Taşova\'ya müftü
                       olarak atandı. Bu görevde iken katıldığı Diyanet İşleri
                       Başkanlığı İstanbul Hizmetiçi Müftü ve Vaizler Kursunu
-                      1983'te bitirdikten sonra aynı yıl Hollanda'ya din
+                      1983\'te bitirdikten sonra aynı yıl Hollanda\'ya din
                       görevlisi olarak gönderildi.
                     </p>
                     <p>
-                      1983-84 yıllarında Hollanda'nın Breda ve Tilburg
+                      1983-84 yıllarında Hollanda\'nın Breda ve Tilburg
                       şehirlerinde bir yıl Diyanet Din Görevliliği yaptıktan
-                      sonra, 1985-'87 yıllarında Amsterdam Üniversitesinde (UvA)
-                      Hristiyanlık üzerine Yüksek Lisans (master) eğitimini
-                      tamamladı. 1988-'94 arası aynı Üniversitede (Universiteit
-                      van Amsterdam), Avrupa ve İslam ülkeleriyle mukayeseli
-                      olarak, Hollanda'da İlkokullar'da İslam din eğitimi
-                      konusunda doktorasını yaptı. 1995-2005 arası (yarı zamanlı
-                      olarak) Amsterdam İntercoffessionele PABO (Dinler arası
-                      Öğretmen Eğitim AkÂdemisinde) İslam Din Dersi eğitimi
-                      verdi. Aynı yıllarda Amsterdam (VUMC) ve Utrecht (UMC)
-                      AkÂdemi Hastanelerinde (yarı-zamanlı olarak) İslami Manevi
-                      Bakım konusunda araştırma ve uygulama görevinde bulundu.
+                      sonra, 1985-\'87 yıllarında Amsterdam Üniversitesinde
+                      (UvA) Hristiyanlık üzerine Yüksek Lisans (master)
+                      eğitimini tamamladı. 1988-\'94 arası aynı Üniversitede
+                      (Universiteit van Amsterdam), Avrupa ve İslam ülkeleriyle
+                      mukayeseli olarak, Hollanda\'da İlkokullar\'da İslam din
+                      eğitimi konusunda doktorasını yaptı. 1995-2005 arası (yarı
+                      zamanlı olarak) Amsterdam İntercoffessionele PABO (Dinler
+                      arası Öğretmen Eğitim AkÂdemisinde) İslam Din Dersi
+                      eğitimi verdi. Aynı yıllarda Amsterdam (VUMC) ve Utrecht
+                      (UMC) AkÂdemi Hastanelerinde (yarı-zamanlı olarak) İslami
+                      Manevi Bakım konusunda araştırma ve uygulama görevinde
+                      bulundu.
                     </p>
                     <p>
-                      2000 yılında Hollanda'nın Amersfort şehrinde Klinik Eğitim
-                      Merkezinde 3 aylık (yatılı) Klinik Manevi Formasyon
-                      Kursu'na katıldı (KPV). 2003-2005 yıllarında Amsterdam'da
-                      Post-AkÂdemik Süpervizörlük (www.pao.nl) eğitimini
-                      bitirerek resmi kurumlarda çalışan manevi bakım
+                      2000 yılında Hollanda\'nın Amersfort şehrinde Klinik
+                      Eğitim Merkezinde 3 aylık (yatılı) Klinik Manevi Formasyon
+                      Kursu\'na katıldı (KPV). 2003-2005 yıllarında
+                      Amsterdam\'da Post-AkÂdemik Süpervizörlük (www.pao.nl)
+                      eğitimini bitirerek resmi kurumlarda çalışan manevi bakım
                       görevlilerine süpervizörlük yaptı.
                     </p>
                     <p>
@@ -215,17 +213,18 @@ export default function Kimlik() {
                       Merkezinde (Centrum voor İslamitische Theologie), İslami
                       Manevi Bakım bölümü Yüksek Lisans (master) koordinatörü ve
                       süpervizör olarak Öğretim Üyeliği yaptı. Bu kurumdan 2016
-                      yılında emekliye ayrılarak Türkiye'ye kesin dönüş yapmış
+                      yılında emekliye ayrılarak Türkiye\'ye kesin dönüş yapmış
                       bulunan Karagül, 2017 yılından itibaren memleketi olan
-                      ORDU/Ünye'de ikamet etmektedir. Karagül orta derece Arapça
-                      ve Hollandaca (Flemenkçe), biraz da İngilizce bilmektedir.
+                      ORDU/Ünye\'de ikamet etmektedir. Karagül orta derece
+                      Arapça ve Hollandaca (Flemenkçe), biraz da İngilizce
+                      bilmektedir.
                     </p>
                   </CardContent>
                 </Card>
 
                 <Card>
                   <CardHeader>
-                    <CardTitle className="text-xl flex items-center gap-2">
+                    <CardTitle className="text-xl flex items-center gap-2 mt-6">
                       <Award className="h-5 w-5 text-primary" />
                       İstisnai Özellikler
                     </CardTitle>
@@ -255,7 +254,7 @@ export default function Kimlik() {
                         kurucu üyesi (başkan) 2001
                       </li>
                       <li>
-                        Hollanda'da Manevi Bakım Meslek içi Supervisörlük
+                        Hollanda\'da Manevi Bakım Meslek içi Supervisörlük
                         eğitimi alan ilk ilahiyatçı, 2003-2005
                       </li>
                     </ul>
@@ -266,7 +265,7 @@ export default function Kimlik() {
               <TabsContent value="egitim" className="space-y-6">
                 <Card>
                   <CardHeader>
-                    <CardTitle className="text-xl flex items-center gap-2">
+                    <CardTitle className="text-xl flex items-center gap-2 mt-6">
                       <GraduationCap className="h-5 w-5 text-primary" />
                       Eğitim Bilgileri
                     </CardTitle>
@@ -351,7 +350,7 @@ export default function Kimlik() {
 
                 <Card>
                   <CardHeader>
-                    <CardTitle className="text-xl flex items-center gap-2">
+                    <CardTitle className="text-xl flex items-center gap-2 mt-6">
                       <FileText className="h-5 w-5 text-primary" />
                       Mesleki Deneyim
                     </CardTitle>
@@ -450,7 +449,7 @@ export default function Kimlik() {
               <TabsContent value="yayinlar" className="space-y-6">
                 <Card>
                   <CardHeader>
-                    <CardTitle className="text-xl flex items-center gap-2">
+                    <CardTitle className="text-xl flex items-center gap-2 mt-6">
                       <BookOpen className="h-5 w-5 text-primary" />
                       Yayınlar ve Akademik Çalışmalar
                     </CardTitle>
@@ -470,7 +469,7 @@ export default function Kimlik() {
                               (yayına hazırlanıyor), 2022.
                             </li>
                             <li>
-                              Karağül, A. Batı'da resmi kurumlarda profesyonel
+                              Karağül, A. Batı\'da resmi kurumlarda profesyonel
                               MANEVİ BAKIM HİZMETLERİ TEORİ VE PRATİĞİ, 2020
                             </li>
                             <li>
@@ -490,36 +489,36 @@ export default function Kimlik() {
                         <AccordionContent>
                           <ul className="list-disc pl-5 space-y-2 text-muted-foreground">
                             <li>
-                              Karagül, A. 'Manevi danışmanlık ve rehberlik
-                              eğitiminde staj ve süpervizyonun önemi', içinde:
+                              Karagül, A. \'Manevi danışmanlık ve rehberlik
+                              eğitiminde staj ve süpervizyonun önemi\', içinde:
                               Sağlık Hizmeterinde Manevi Danışmanlık ve
                               Rehberlik (Dijital yayın). DEM Ensar Neşriyat
                               ss.89-108, 2019.
                             </li>
                             <li>
-                              A.Karagul, A. 'Islamitische Seelsorge in den
-                              Niederlanden. Vom Laientum zur Professionalität'
-                              (Hollanda'da Islami Manevi Bakım. Armatörlük'ten
+                              A.Karagul, A. \'Islamitische Seelsorge in den
+                              Niederlanden. Vom Laientum zur Professionalität\'
+                              (Hollanda\'da Islami Manevi Bakım. Armatörlük\'ten
                               Profesyonelliğe). Híkma (ilmi dergi), Journal of
                               Islamic Theology and Religious Education, 2015.
                             </li>
                             <li>
-                              Karagül, A. "Göç'ün 50. Yılında Hollanda'da Din ve
-                              İlahiyat eğitimi' (Religious Studies and Theology
-                              in the 50th Year of Migration in the Netherlands),
-                              Uluslararası-International Türkiye-Hollanda
-                              İlişkiler Sempozyumu, 2014.
+                              Karagül, A. \"Göç\'ün 50. Yılında Hollanda\'da Din
+                              ve İlahiyat eğitimi\' (Religious Studies and
+                              Theology in the 50th Year of Migration in the
+                              Netherlands), Uluslararası-International
+                              Türkiye-Hollanda İlişkiler Sempozyumu, 2014.
                             </li>
                             <li>
-                              Karagül, A., "Avrupa'da Müslüman Gençlerin
-                              Maneviyatla İlişkisi," Gençlik ve Kültürel
+                              Karagül, A., \"Avrupa\'da Müslüman Gençlerin
+                              Maneviyatla İlişkisi,\" Gençlik ve Kültürel
                               Mirasımız (Youth and Our Cultural Heritage)
                               Uluslararası Kongre, 2014.
                             </li>
                             <li>
-                              Karagül, A. 'Manevi Bakım: Anlamı, önemi, yöntemi
-                              ve eğitimi (Hollanda örneği)': Spiritual Care:
-                              It's meaning, Significance, Method, and Training
+                              Karagül, A. \'Manevi Bakım: Anlamı, önemi, yöntemi
+                              ve eğitimi (Hollanda örneği)\': Spiritual Care:
+                              It\'s meaning, Significance, Method, and Training
                               (The Netherlands Case). Dini Araştırmalar, 2012.
                             </li>
                           </ul>
@@ -534,7 +533,7 @@ export default function Kimlik() {
                               Stella van de Wetering/Arslan Karagül, Zoek kennis
                               van de wieg tot het graf. Islamitisch
                               godsdienstonderwijs in Nederland (Beşikten Mezara.
-                              Hollanda'da islam din egitimi),
+                              Hollanda\'da islam din egitimi),
                               Antwerpen-Apeldoorn; Garant, 2013.
                             </li>
                           </ul>
@@ -586,14 +585,14 @@ export default function Kimlik() {
                         <AccordionContent>
                           <ul className="list-disc pl-5 space-y-2 text-muted-foreground">
                             <li>
-                              'Modernleşme arttıkça insanın manevi danışmanlığa
-                              olan ihtiyacı da artmıştır'. Söyleşi: Mustafa
+                              \'Modernleşme arttıkça insanın manevi danışmanlığa
+                              olan ihtiyacı da artmıştır\'. Söyleşi: Mustafa
                               Berg. Diyanet aylık dergi, Şubat 2019, sayı: 338,
                               ss.22-25.
                             </li>
                             <li>
-                              'Manevi Bakım bir vaaz ve nasihat meselesi
-                              değildir', Amsterdam: Platform dergisi, röportaj:
+                              \'Manevi Bakım bir vaaz ve nasihat meselesi
+                              değildir\', Amsterdam: Platform dergisi, röportaj:
                               Banu Çelik, 2012.
                             </li>
                           </ul>
@@ -605,7 +604,7 @@ export default function Kimlik() {
 
                 <Card>
                   <CardHeader>
-                    <CardTitle className="text-xl flex items-center gap-2">
+                    <CardTitle className="text-xl flex items-center gap-2 mt-6">
                       <Globe className="h-5 w-5 text-primary" />
                       Yabancı Dil Bilgisi
                     </CardTitle>

@@ -178,4 +178,42 @@
   .text-gradient {
     @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-blue-500;
   }
+
+  .drop-shadow-glow {
+    filter: drop-shadow(0 0 5px theme("colors.primary.DEFAULT"));
+  }
+
+  .arrow-container {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .arrow-icon {
+    @apply text-primary transform transition-all duration-300;
+  }
+
+  .arrow-icon::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    @apply bg-primary/20 rounded-full blur-sm -z-10;
+    transform: scale(0);
+    transition: transform 0.3s ease;
+  }
+
+  .group:hover .arrow-icon::after {
+    transform: scale(1.2);
+  }
+
+  /* Tabs bileşenleri için özel stiller */
+  [role="tablist"] {
+    @apply p-1 bg-muted/60 rounded-lg;
+  }
+
+  [role="tab"] {
+    @apply rounded-md transition-all hover:bg-background;
+  }
 }
